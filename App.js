@@ -7,20 +7,19 @@
  */
 
  import React, {Component} from 'react';
- import {View, StyleSheet} from 'react-native';
+ import {StyleSheet, SafeAreaView} from 'react-native';
  import ButtonCombo from './ButtonCombo'
  
  export default class App extends Component {
 
    render() {
      return (
-       
-       <View style = {styles.base}>
+       <SafeAreaView style = {styles.base}>
         <ButtonCombo id = {1}/>
         <ButtonCombo id = {2}/>
         <ButtonCombo id = {3}/>
-        <ButtonCombo id = {4}/>
-       </View>
+        <ButtonCombo id = {4}/>         
+       </SafeAreaView>
      );
    }
  }

@@ -9,7 +9,7 @@ export default class ButtonCombo extends Component {
         }
     }
 
-    changeColor = () => {
+    changeColor() {
         if(this.state.color === 'blue') {
             this.setState({
                 color: 'red',
@@ -26,6 +26,8 @@ export default class ButtonCombo extends Component {
         return (
         <View style={styles.base}>
             <View style={styles.containerAndBorder}>
+                {/**/}
+                {/*onPress={this.changeColor} */}
                 <Button 
                 onPress={() => this.changeColor()}
                 title = {"Button" + this.props.id}
